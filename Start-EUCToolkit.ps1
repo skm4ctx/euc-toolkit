@@ -1144,7 +1144,7 @@ function Get-AppStreamRegions(){
     $cmboAppStreamHelpDeskRegion.items.add("Select a Region") | Out-Null
     $cmboAppStreamHelpDesk.items.clear()
     $cmboAppStreamHelpDesk.items.add("Pending Region") | Out-Null
-    $listPoolsSessions.items.clear()
+    $listAppStreamSessions.Items.Clear()
     $global:TotalStacks = @()
     $tempStacks = Import-AppStreamRegions -throttleControl $true
     foreach ($stack in $tempStacks){
